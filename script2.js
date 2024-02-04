@@ -1,5 +1,5 @@
 
-function doesWordExist(userJustSaid) {
+function doesWordExist(userJustSaid, triggerArray) {
     console.log("🚀 ~ doesWordExist ~ userJustSaid:", userJustSaid)
     let _ujs_lo = userJustSaid.toLowerCase();
     for (var i = triggerArray.length - 1; i >= 0; i--) {
@@ -13,7 +13,7 @@ function doesWordExist(userJustSaid) {
     return false
 }
 
-let conversationIdentifier = 'init'
+let currentConversationIdentifier = 'init'
 
 function addChat(input, product) {
     const mainDiv = document.getElementById("message-section");
@@ -35,7 +35,7 @@ function addChat(input, product) {
 function sendMessage() {
     const inputField = document.getElementById("input");
     let input = inputField.value.trim();
-    input != "" && output(input);
+    input != "" && outputTest(input);
     inputField.value = "";
 }
 let triggerArray = ['why', 'sad', 'hurt']
@@ -96,26 +96,20 @@ async function output(input) {
     }
 }
 async function outputTest(input) {
-    if (conversationIdentifier == 'init') {
-        if (doesWordExist(input)) {
-            let response = 'I am not being noticed'
-            addChat(input, response)
-            let text = generateSSMLForMood(response, "mad")
-            console.log("🚀 ~ output ~ text:", text)
-            const { AudioStream, visemes } = await speakText(text)
-            streamAudioData(AudioStream);
-
-            conversationIdentifier = 'con-2' // ? strings can be used here to redirect to another flow
-        }
-        else {
-            let response = 'Sorry, I am happy now'
-            addChat(input, response)
-            let text = generateSSMLForMood(response, "happy")
-            console.log("🚀 ~ output ~ text:", text)
-            const { AudioStream, visemes } = await speakText(text)
-            streamAudioData(AudioStream);
-            conversationIdentifier = 'con-2'
-        }
+    const { triggerArray, yes, no } = conversations.find(({ conversationIdentifier }) => conversationIdentifier == currentConversationIdentifier)
+    if (doesWordExist(input, triggerArray)) {
+        addChat(input, yes.ssmlResponse)
+        let text = generateSSMLForMood(yes.ssmlResponse, yes.mood)
+        const { AudioStream, visemes } = await speakText(text)
+        streamAudioData(AudioStream);
+        currentConversationIdentifier = yes.nextIdentifier
+    }
+    else {
+        addChat(input, no.ssmlResponse)
+        let text = generateSSMLForMood(no.ssmlResponse, no.mood)
+        const { AudioStream, visemes } = await speakText(text)
+        streamAudioData(AudioStream);
+        currentConversationIdentifier = no.nextIdentifier
     }
 }
 
