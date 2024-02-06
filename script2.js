@@ -1,4 +1,3 @@
-
 const doesWordExist = (userJustSaid, triggerArray) => {
   console.log("🚀 ~ doesWordExist ~ userJustSaid:", userJustSaid);
   const userJustSaidLower = userJustSaid.toLowerCase();
@@ -10,6 +9,12 @@ const doesWordExist = (userJustSaid, triggerArray) => {
   }
   return false;
 };
+
+function randly(synonyms) {
+  const randomIndex = Math.floor(Math.random() * synonyms.length);
+  console.log("🚀 ~ pickRandomSynonym ~ randomIndex:", randomIndex, synonyms);
+  return synonyms[randomIndex];
+}
 
 function addChat(input, product, init) {
   const { mood, ssmlResponse, action } = product;
@@ -25,9 +30,7 @@ function addChat(input, product, init) {
   let botDiv = document.createElement("div");
   botDiv.id = "bot";
   botDiv.classList.add("message");
-  botDiv.innerHTML = `<span id="bot-response">${
-    ssmlResponse
-  }</span>`;
+  botDiv.innerHTML = `<span id="bot-response">${ssmlResponse}</span>`;
   mainDiv.appendChild(botDiv);
   var scroll = document.getElementById("message-section");
   scroll.scrollTop = scroll.scrollHeight;
@@ -56,16 +59,19 @@ async function outputTest(input, init) {
       conversationIdentifier == currentConversationIdentifier
   );
   if (doesWordExist(input, triggerArray)) {
-    console.log("🚀 ~ outputTest ~ doesWordExist: if");
-    addChat(input, yes, init);
-    let text = generateSSMLForMood(yes.ssmlResponse, yes.mood);
+    let prevYSsml = { ...yes };
+    prevYSsml.ssmlResponse = randly(prevYSsml.ssmlResponse);
+
+    addChat(input, prevYSsml, init);
+    let text = generateSSMLForMood(prevYSsml.ssmlResponse, yes.mood);
     const { AudioStream, visemes } = await speakText(text);
     streamAudioData(AudioStream);
     currentConversationIdentifier = yes.nextIdentifier;
   } else {
-    console.log("🚀 ~ outputTest ~ doesWordExist: else");
-    addChat(input, no, init);
-    let text = generateSSMLForMood(no.ssmlResponse, no.mood);
+    let prevNSsml = { ...no };
+    prevNSsml.ssmlResponse = randly(prevNSsml.ssmlResponse);
+    addChat(input, prevNSsml, init);
+    let text = generateSSMLForMood(prevNSsml.ssmlResponse, no.mood);
     const { AudioStream, visemes } = await speakText(text);
     streamAudioData(AudioStream);
     currentConversationIdentifier = no.nextIdentifier;
@@ -106,13 +112,13 @@ function generateSSMLForMood(text, mood) {
 
 {
   /* 
-Voice Acting
-https://docs.aws.amazon.com/polly/latest/dg/supportedtags.html
-<emphasis level="strong">Strong emphasis</emphasis>
-<emphasis level="moderate">Moderate emphasis</emphasis>
-<prosody volume="loud">Loud speech</prosody>
-<prosody volume="soft">Soft speech</prosody>
-<prosody rate="fast">Fast speech</prosody>
-<prosody rate="slow">Slow speech</prosody> 
-*/
+  Voice Acting
+  https://docs.aws.amazon.com/polly/latest/dg/supportedtags.html
+  <emphasis level="strong">Strong emphasis</emphasis>
+  <emphasis level="moderate">Moderate emphasis</emphasis>
+  <prosody volume="loud">Loud speech</prosody>
+  <prosody volume="soft">Soft speech</prosody>
+  <prosody rate="fast">Fast speech</prosody>
+  <prosody rate="slow">Slow speech</prosody> 
+  */
 }
