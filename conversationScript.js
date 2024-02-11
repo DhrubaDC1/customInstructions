@@ -4,70 +4,70 @@
 //     yes: {
 //         mood: 'sad',
 //         ssmlResponse: 'I am not being noticed',
-//         nextIdentifier: "con-2"
+//         nextIdentifier: "conv-2"
 //     },
 //     no: {
 //         mood: 'mad',
 //         ssmlResponse: 'Sorry, I am happy now',
-//         nextIdentifier: "con-2"
+//         nextIdentifier: "conv-2"
 //     }
 // }, {
-//     conversationIdentifier: 'con-2',
+//     conversationIdentifier: 'conv-2',
 //     triggerArray: ['who', 'not', 'notic'],
 //     yes: {
 //         mood: 'sad',
 //         ssmlResponse: 'Why are you like this?',
-//         nextIdentifier: "con-3"
+//         nextIdentifier: "conv-3"
 //     },
 //     no: {
 //         mood: 'mad',
 //         ssmlResponse: 'Sorry, I am happy now',
-//         nextIdentifier: "con-3"
+//         nextIdentifier: "conv-3"
 //     }
 // }, {
-//     conversationIdentifier: 'con-3',
+//     conversationIdentifier: 'conv-3',
 //     triggerArray: ['who', 'not', 'notic'],
 //     yes: {
 //         mood: 'happy',
 //         ssmlResponse: 'Why do you ignore me?',
-//         nextIdentifier: "con-4"
+//         nextIdentifier: "conv-4"
 //     },
 //     no: {
 //         mood: 'mad',
 //         ssmlResponse: 'Sorry, I am happy now',
-//         nextIdentifier: "con-4"
+//         nextIdentifier: "conv-4"
 //     }
 // }]
 
 // const conversations = [
 //   {
-//     conversationIdentifier: "con-1",
+//     conversationIdentifier: "conv-1",
 //     triggerArray: ["enthusiastically", "ready", "fanciest", "world"],
 //     yes: {
 //       mood: "happy",
 //       ssmlResponse: "Let's have a tea party!",
 //       action: "giggling",
-//       nextIdentifier: "con-2",
+//       nextIdentifier: "conv-2",
 //     },
 //   },
 //   {
-//     conversationIdentifier: "con-2",
+//     conversationIdentifier: "conv-2",
 //     triggerArray: ["okay", "yes", "sure", "let's go"],
 //     yes: {
 //       mood: "surprise",
 //       ssmlResponse: "I will go bring the tea set.",
 //       action: "giggling",
-//       nextIdentifier: "con-3",
+//       nextIdentifier: "conv-3",
 //     },
 //     no: {
 //       mood: "angry",
 //       ssmlResponse: "I really wanted to have the tea party now",
 //       action: "pouting",
-//       nextIdentifier: "con-4",
+//       nextIdentifier: "conv-4",
 //     },
 //   },
 //   {
-//     conversationIdentifier: "con-3",
+//     conversationIdentifier: "conv-3",
 //     triggerArray: ["come", "with you", "join", "along"],
 //     yes: {
 //       mood: "neutral",
@@ -83,7 +83,7 @@
 //     },
 //   },
 //   {
-//     conversationIdentifier: "con-4",
+//     conversationIdentifier: "conv-4",
 //     triggerArray: ["okay", "yes", "sure", "let's go"],
 //     yes: {
 //       mood: "happy",
@@ -102,7 +102,7 @@
 
 // const conversations = [
 //   {
-//     conversationIdentifier: "con-1",
+//     conversationIdentifier: "conv-1",
 //     triggerArray: ["ready", "What", "How", "Hi"],
 //     yes: {
 //       mood: "angry",
@@ -114,11 +114,11 @@
 //         "I don't want dinner!",
 //       ],
 //       action: "Crying",
-//       nextIdentifier: "con-2",
+//       nextIdentifier: "conv-2",
 //     },
 //   },
 //   {
-//     conversationIdentifier: "con-2",
+//     conversationIdentifier: "conv-2",
 //     triggerArray: ["Why", "What", "Happenned", "Who"],
 //     yes: {
 //       mood: "angry",
@@ -135,7 +135,7 @@
 //         "Mommy took away my toy 'cause I didn't want my food!",
 //       ],
 //       action: "Crying",
-//       nextIdentifier: "con-3",
+//       nextIdentifier: "conv-3",
 //     },
 //     no: {
 //       mood: "angry",
@@ -150,11 +150,11 @@
 //         "Can you give me my toy back?",
 //       ],
 //       action: "Crying",
-//       nextIdentifier: "con-3",
+//       nextIdentifier: "conv-3",
 //     },
 //   },
 //   {
-//     conversationIdentifier: "con-3",
+//     conversationIdentifier: "conv-3",
 //     triggerArray: ["let's", "make", "deal", "come to"],
 //     yes: {
 //       mood: "angry",
@@ -168,7 +168,7 @@
 //         "I don't want to make a deal!",
 //       ],
 //       action: "crossing her arms",
-//       nextIdentifier: "con-4",
+//       nextIdentifier: "conv-4",
 //     },
 //     no: {
 //       mood: "angry",
@@ -185,11 +185,11 @@
 //         "I want my toy right here!",
 //       ],
 //       action: "giggling",
-//       nextIdentifier: "con-4",
+//       nextIdentifier: "conv-4",
 //     },
 //   },
 //   {
-//     conversationIdentifier: "con-4",
+//     conversationIdentifier: "conv-4",
 //     triggerArray: ["Give", "toy", "eat", "food", "lunch"],
 //     yes: {
 //       mood: "angry",
@@ -206,7 +206,7 @@
 //         "No! I won't until I have my toy!",
 //       ],
 //       action: "crossing her arms",
-//       nextIdentifier: "con-5",
+//       nextIdentifier: "conv-5",
 //     },
 //     no: {
 //       mood: "angry",
@@ -223,11 +223,11 @@
 //         "Why she take my toy! I don't want to eat my lunch!",
 //       ],
 //       action: "giggling",
-//       nextIdentifier: "con-5",
+//       nextIdentifier: "conv-5",
 //     },
 //   },
 //   {
-//     conversationIdentifier: "con-5",
+//     conversationIdentifier: "conv-5",
 //     triggerArray: ["I'm", "not", "giving", "toy", "don't lunch"],
 //     yes: {
 //       mood: "angry",
@@ -244,7 +244,7 @@
 //         "This not good! Want my toy now!",
 //       ],
 //       action: "crossing her arms",
-//       nextIdentifier: "con-6",
+//       nextIdentifier: "conv-6",
 //     },
 //     no: {
 //       mood: "angry",
@@ -261,11 +261,11 @@
 //         "I wanna play with my favorite toy car!",
 //       ],
 //       action: "giggling",
-//       nextIdentifier: "con-6",
+//       nextIdentifier: "conv-6",
 //     },
 //   },
 //   {
-//     conversationIdentifier: "con-6",
+//     conversationIdentifier: "conv-6",
 //     triggerArray: ["Okay", "Will", "give", "toy", "car"],
 //     yes: {
 //       mood: "angry",
@@ -282,7 +282,7 @@
 //         "I know it! You not gonna give me my toy!",
 //       ],
 //       action: "crossing her arms",
-//       nextIdentifier: "con-7",
+//       nextIdentifier: "conv-7",
 //     },
 //     no: {
 //       mood: "angry",
@@ -299,11 +299,11 @@
 //         "I'm waiting for my toy before eating!",
 //       ],
 //       action: "giggling",
-//       nextIdentifier: "con-7",
+//       nextIdentifier: "conv-7",
 //     },
 //   },
 //   {
-//     conversationIdentifier: "con-7",
+//     conversationIdentifier: "conv-7",
 //     triggerArray: ["mad", "angry", "crazy"],
 //     yes: {
 //       mood: "angry",
@@ -315,205 +315,237 @@
 //       mood: "angry",
 //       ssmlResponse: ["No"],
 //       action: "giggling",
-//       nextIdentifier: "con-7",
+//       nextIdentifier: "conv-7",
 //     },
 //   },
 // ];
 const conversations = [
-	{
-		conversationIdentifier: "con-1",
-		triggerArray: ["ready"],
-		yes: {
-			mood: "angry",
-			ssmlResponse: [`Let's go`],
-			action: "Crying",
-			nextIdentifier: "1000_2",
-		},
-	},
-	{
-		conversationIdentifier: "1000_2",
-		triggerArray: ["lets", "go"],
-		yes: {
-			mood: "angry",
-			ssmlResponse: [
-				` Hi.  I'm just a little kid.  right? <break time="0.5s"/>but, I am smarter than you. <break time="0.5s"/> do you agree that i am smarter than you?`,
-			],
-			action: "Crying",
-			nextIdentifier: "1001_yes",
-		},
-		no: {
-			mood: "angry",
-			ssmlResponse: [`hey man, you gotta say lets go to begin`],
-			action: "Crying",
-			nextIdentifier: "1000_2",
-		},
-	},
-	{
-		conversationIdentifier: "1001_yes",
-		triggerArray: ["yes"],
-		yes: {
-			mood: "angry",
-			ssmlResponse: [
-				"you said.  #userJustSaid . but, now i'm worried. You should respect your own intelligence.  Let's try again.",
-			],
-			action: "Crying",
-			nextIdentifier: "pandora",
-		},
-		no: {
-			mood: "angry",
-			ssmlResponse: [
-				"Did you just say? #userJustSaid. what do you mean by that?",
-			],
-			action: "Crying",
-			nextIdentifier: "1001_no",
-		},
-	},
-	{
-		conversationIdentifier: "1001_no",
-		triggerArray: ["yes"],
-		yes: {
-			mood: "angry",
-			ssmlResponse: [
-				"Wait.  Do you think you are smart?  or, do you think that I am, not, that, smart.",
-			],
-			action: "Crying",
-			nextIdentifier: "1002_no_default",
-		},
-		yes: {
-			mood: "angry",
-			ssmlResponse: [
-				"Wait.  Do you think you are smart?  or, do you think that I am, not, that, smart.",
-			],
-			action: "Crying",
-			nextIdentifier: "1002_no_default",
-		},
-	},
-	{
-		conversationIdentifier: "1002_no_default",
-		triggerArray: ["yes"],
-		yes: {
-			mood: "angry",
-			ssmlResponse: [],
-			action: "crossing her arms",
-			nextIdentifier: "1002_no_default",
-		},
-		no: {
-			mood: "angry",
-			ssmlResponse: [
-				"Wait.  Do you think you are smart?  or, do you think that I am, not, that, smart.",
-			],
-			action: "giggling",
-			nextIdentifier: "1002_no_default",
-		},
-	},
-	{
-		conversationIdentifier: "1002_no_default",
-		triggerArray: ["yes"],
-		yes: {
-			mood: "angry",
-			ssmlResponse: [
-				"No! I want my toy first!",
-				"No! Give me my toy first!",
-				"No! I need my toy back first!",
-				"No! I want my toy now!",
-				"No! My toy first, please!",
-				"No! I won't until I get my toy!",
-				"No! I want my toy right now!",
-				"No! My toy back first, please!",
-				"No! I want my toy immediately!",
-				"No! I won't until I have my toy!",
-			],
-			action: "crossing her arms",
-			nextIdentifier: "1003_no_default",
-		},
-		no: {
-			mood: "angry",
-			ssmlResponse: [
-				"Why she take my toy! I no want my lunch!",
-				"She take my toy! I not eat my lunch!",
-				"She took my toy! I don't wanna eat my lunch!",
-				"Why she take my toy! I not hungry for lunch!",
-				"She take my toy! I don't want lunch!",
-				"Why she take my toy! I don't feel like eating my lunch!",
-				"She took my toy! I don't want my lunch!",
-				"Why she take my toy! I not hungry, mama!",
-				"She take my toy! I don't like lunch!",
-				"Why she take my toy! I don't want to eat my lunch!",
-			],
-			action: "giggling",
-			nextIdentifier: "1003_no_default",
-		},
-	},
-	{
-		conversationIdentifier: "1003_no_default",
-		triggerArray: ["yes"],
-		yes: {
-			mood: "angry",
-			ssmlResponse: [
-				"This bad! Give toy to me!",
-				"I no like this! Want my toy!",
-				"This not fun! Need my toy!",
-				"This yucky! Want my toy now!",
-				"This not okay! Want toy!",
-				"This not nice! I want my toy!",
-				"This no good! Give me toy!",
-				"This not fun! Give my toy!",
-				"This stinky! Give me my toy!",
-				"This not good! Want my toy now!",
-			],
-			action: "crossing her arms",
-			nextIdentifier: "pandora",
-		},
-		no: {
-			mood: "angry",
-			ssmlResponse: [
-				"I wanna play with my toy car!",
-				"I wanna drive my toy car!",
-				"I want to play with my car toy!",
-				"I want my toy car for playing!",
-				"I want to have fun with my toy car!",
-				"I wanna have fun with my toy car!",
-				"I wanna enjoy my toy car!",
-				"I want my toy car to play!",
-				"I want to play with my little car!",
-				"I wanna play with my favorite toy car!",
-			],
-			action: "giggling",
-			nextIdentifier: "pandora",
-		},
-	},
-	{
-		conversationIdentifier: "pandora",
-		triggerArray: ["yes"],
-		yes: {
-			mood: "angry",
-			ssmlResponse: ["Text from pandora"],
-			action: "crossing her arms",
-			nextIdentifier: "pandora",
-		},
-		no: {
-			mood: "angry",
-			ssmlResponse: ["text from pandora"],
-			action: "giggling",
-			nextIdentifier: "pandora",
-		},
-	},
-	// {
-	// 	conversationIdentifier: "con-7",
-	// 	triggerArray: ["mad", "angry", "crazy"],
-	// 	yes: {
-	// 		mood: "angry",
-	// 		ssmlResponse: ["Yes", "Yes"],
-	// 		action: "crossing her arms",
-	// 		nextIdentifier: null,
-	// 	},
-	// 	no: {
-	// 		mood: "angry",
-	// 		ssmlResponse: ["No"],
-	// 		action: "giggling",
-	// 		nextIdentifier: "con-7",
-	// 	},
-	// },
+  {
+    conversationIdentifier: "conv-0",
+    triggerArray: ["ready"],
+    yes: {
+      mood: "angry",
+      ssmlResponse: [`Let's go`],
+      action: "Crying",
+      nextIdentifier: "conv-1-2",
+    },
+  },
+  {
+    conversationIdentifier: "conv-1-2",
+    triggerArray: ["lets", "go"],
+    yes: {
+      mood: "angry",
+      ssmlResponse: [
+        `Hi.  I'm just a little kid.  right? <break time="0.5s"/>but, I am smarter than you. <break time="0.5s"/> do you agree that i am smarter than you?`,
+      ],
+      action: "Crying",
+      nextIdentifier: "conv-3",
+    },
+    no: {
+      mood: "angry",
+      ssmlResponse: [`hey man, you gotta say lets go to begin`],
+      action: "Crying",
+      nextIdentifier: "conv-1-2",
+    },
+  },
+  {
+    conversationIdentifier: "conv-3",
+    triggerArray: ["yes"],
+    yes: {
+      mood: "angry",
+      ssmlResponse: [
+        "you said.  #userJustSaid . but, now i'm worried. You should respect your own intelligence.  Let's try again.",
+      ],
+      action: "Crying",
+      nextIdentifier: "conv-4",
+    },
+    no: {
+      mood: "angry",
+      ssmlResponse: [
+        "Did you just say? #userJustSaid. what do you mean by that?",
+      ],
+      action: "Crying",
+      nextIdentifier: "conv-5",
+    },
+  },
+  {
+    conversationIdentifier: "conv-4",
+    triggerArray: ["yes"],
+    yes: {
+      mood: "angry",
+      ssmlResponse: ["Sent over to pandora"],
+      action: "Crying",
+      nextIdentifier: "pandora",
+    },
+    no: {
+      mood: "angry",
+      ssmlResponse: [
+        "Did you just say? #userJustSaid. what do you mean by that?",
+      ],
+      action: "Crying",
+      nextIdentifier: "conv-5",
+    },
+  },
+  {
+    conversationIdentifier: "conv-5",
+    triggerArray: [],
+    no: {
+      mood: "angry",
+      ssmlResponse: [
+        "Wait.  Do you think you are smart?  or, do you think that I am, not, that, smart.",
+      ],
+      action: "Crying",
+      nextIdentifier: "conv-6",
+    },
+  },
+  {
+    conversationIdentifier: "conv-6",
+    triggerArray: [],
+    no: {
+      mood: "angry",
+      ssmlResponse: [
+        "Right. You say . #userJustSaid. Is that your proof of superior intelligence?",
+      ],
+      action: "Crying",
+      nextIdentifier: "conv-7",
+    },
+  },
+  {
+    conversationIdentifier: "conv-7",
+    triggerArray: [],
+    no: {
+      mood: "angry",
+      ssmlResponse: [],
+      action: "Crying",
+      nextIdentifier: null,
+    },
+  },
+  // {
+  // 	conversationIdentifier: "1002_no_default",
+  // 	triggerArray: ["yes"],
+  // 	yes: {
+  // 		mood: "angry",
+  // 		ssmlResponse: [],
+  // 		action: "crossing her arms",
+  // 		nextIdentifier: "1002_no_default",
+  // 	},
+  // 	no: {
+  // 		mood: "angry",
+  // 		ssmlResponse: [
+  // 			"Wait.  Do you think you are smart?  or, do you think that I am, not, that, smart.",
+  // 		],
+  // 		action: "giggling",
+  // 		nextIdentifier: "1002_no_default",
+  // 	},
+  // },
+  // {
+  // 	conversationIdentifier: "1002_no_default",
+  // 	triggerArray: ["yes"],
+  // 	yes: {
+  // 		mood: "angry",
+  // 		ssmlResponse: [
+  // 			"No! I want my toy first!",
+  // 			"No! Give me my toy first!",
+  // 			"No! I need my toy back first!",
+  // 			"No! I want my toy now!",
+  // 			"No! My toy first, please!",
+  // 			"No! I won't until I get my toy!",
+  // 			"No! I want my toy right now!",
+  // 			"No! My toy back first, please!",
+  // 			"No! I want my toy immediately!",
+  // 			"No! I won't until I have my toy!",
+  // 		],
+  // 		action: "crossing her arms",
+  // 		nextIdentifier: "1003_no_default",
+  // 	},
+  // 	no: {
+  // 		mood: "angry",
+  // 		ssmlResponse: [
+  // 			"Why she take my toy! I no want my lunch!",
+  // 			"She take my toy! I not eat my lunch!",
+  // 			"She took my toy! I don't wanna eat my lunch!",
+  // 			"Why she take my toy! I not hungry for lunch!",
+  // 			"She take my toy! I don't want lunch!",
+  // 			"Why she take my toy! I don't feel like eating my lunch!",
+  // 			"She took my toy! I don't want my lunch!",
+  // 			"Why she take my toy! I not hungry, mama!",
+  // 			"She take my toy! I don't like lunch!",
+  // 			"Why she take my toy! I don't want to eat my lunch!",
+  // 		],
+  // 		action: "giggling",
+  // 		nextIdentifier: "1003_no_default",
+  // 	},
+  // },
+  // {
+  // 	conversationIdentifier: "1003_no_default",
+  // 	triggerArray: ["yes"],
+  // 	yes: {
+  // 		mood: "angry",
+  // 		ssmlResponse: [
+  // 			"This bad! Give toy to me!",
+  // 			"I no like this! Want my toy!",
+  // 			"This not fun! Need my toy!",
+  // 			"This yucky! Want my toy now!",
+  // 			"This not okay! Want toy!",
+  // 			"This not nice! I want my toy!",
+  // 			"This no good! Give me toy!",
+  // 			"This not fun! Give my toy!",
+  // 			"This stinky! Give me my toy!",
+  // 			"This not good! Want my toy now!",
+  // 		],
+  // 		action: "crossing her arms",
+  // 		nextIdentifier: "pandora",
+  // 	},
+  // 	no: {
+  // 		mood: "angry",
+  // 		ssmlResponse: [
+  // 			"I wanna play with my toy car!",
+  // 			"I wanna drive my toy car!",
+  // 			"I want to play with my car toy!",
+  // 			"I want my toy car for playing!",
+  // 			"I want to have fun with my toy car!",
+  // 			"I wanna have fun with my toy car!",
+  // 			"I wanna enjoy my toy car!",
+  // 			"I want my toy car to play!",
+  // 			"I want to play with my little car!",
+  // 			"I wanna play with my favorite toy car!",
+  // 		],
+  // 		action: "giggling",
+  // 		nextIdentifier: "pandora",
+  // 	},
+  // },
+  // {
+  // 	conversationIdentifier: "pandora",
+  // 	triggerArray: ["yes"],
+  // 	yes: {
+  // 		mood: "angry",
+  // 		ssmlResponse: ["Text from pandora"],
+  // 		action: "crossing her arms",
+  // 		nextIdentifier: "pandora",
+  // 	},
+  // 	no: {
+  // 		mood: "angry",
+  // 		ssmlResponse: ["text from pandora"],
+  // 		action: "giggling",
+  // 		nextIdentifier: "pandora",
+  // 	},
+  // },
+  // {
+  // 	conversationIdentifier: "conv-7",
+  // 	triggerArray: ["mad", "angry", "crazy"],
+  // 	yes: {
+  // 		mood: "angry",
+  // 		ssmlResponse: ["Yes", "Yes"],
+  // 		action: "crossing her arms",
+  // 		nextIdentifier: null,
+  // 	},
+  // 	no: {
+  // 		mood: "angry",
+  // 		ssmlResponse: ["No"],
+  // 		action: "giggling",
+  // 		nextIdentifier: "conv-7",
+  // 	},
+  // },
 ];
 
 // ? When we run out of script we can look through all the trigger array to find the best match with the current sentence and then use that conversationIdentifier
